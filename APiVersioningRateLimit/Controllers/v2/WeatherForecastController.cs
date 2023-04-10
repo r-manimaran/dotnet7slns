@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace APiVersioningRateLimit.Controllers.v2
 {
@@ -6,6 +7,7 @@ namespace APiVersioningRateLimit.Controllers.v2
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiVersion("2.0")]
     [ApiVersion("2.1")]
+    [EnableRateLimiting("FixedWindowPolicy")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -35,6 +37,7 @@ namespace APiVersioningRateLimit.Controllers.v2
 
         [HttpGet(Name = "GetWeatherForecastv21")]
         [MapToApiVersion("2.1")]
+        [EnableRateLimiting("FixedWindowPolicy")]
         public IEnumerable<WeatherForecast> GetV21()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -44,6 +47,33 @@ namespace APiVersioningRateLimit.Controllers.v2
                 Summary = "Summary from Version2.1"
             })
             .ToArray();
+        }
+
+        [HttpGet]
+        [Route("GetRandomNumber")]
+        [MapToApiVersion("2.1")]
+        [EnableRateLimiting("SlidingWindowPolicy")]
+        public IActionResult GetRandomNumber()
+        {
+            return Ok(Random.Shared.Next());  
+        }
+
+        [HttpGet]
+        [Route("GetGreetings")]
+        [MapToApiVersion("2.1")]
+        [EnableRateLimiting("ConcurrentRatePolicy")]
+        public IActionResult GetGreeting()
+        {
+            return Ok("Hello! Have a nice day.");
+        }
+
+        [HttpGet]
+        [Route("GetName")]
+        [MapToApiVersion("2.1")]
+        [EnableRateLimiting("TokenBucketPolicy")]
+        public IActionResult GetName()
+        {
+            return Ok("TokenBucket Rate Limiting");
         }
     }
 }

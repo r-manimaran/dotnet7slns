@@ -15,6 +15,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddVersioning();
 
 //Add RateLimit Information
+builder.Services.AddRateLimitingFixedWindow();
+builder.Services.AddRateLimitingSlidingWindow();
+builder.Services.AddRateLimitingConcurrent();
+builder.Services.AddRateLimitingTokenBucket();
 
 var app = builder.Build();
 

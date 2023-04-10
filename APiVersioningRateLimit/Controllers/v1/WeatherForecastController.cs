@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace APiVersioningRateLimit.Controllers.v1
 {
@@ -29,6 +30,33 @@ namespace APiVersioningRateLimit.Controllers.v1
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet]
+        [Route("GetRandomNumber")]
+        [MapToApiVersion("1.0")]
+        [EnableRateLimiting("SlidingWindowPolicy")]
+        public IActionResult GetRandomNumber()
+        {
+            return Ok(Random.Shared.Next());
+        }
+
+        [HttpGet]
+        [Route("GetGreetings")]
+        [MapToApiVersion("1.0")]
+        [EnableRateLimiting("ConcurrentRatePolicy")]
+        public IActionResult GetGreeting()
+        {
+            return Ok("Hello! Have a nice day.");
+        }
+
+        [HttpGet]
+        [Route("GetName")]
+        [MapToApiVersion("1.0")]
+        [EnableRateLimiting("TokenBucketPolicy")]
+        public IActionResult GetName()
+        {
+            return Ok("TokenBucket Rate Limiting");
         }
     }
 }
