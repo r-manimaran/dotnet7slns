@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc.Versioning;
 using APiVersioningRateLimit.Extensions;
 using System.Net.Sockets;
+using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,5 +36,11 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+//using RateLimit in Minimal Api
+app.MapGet("/SayHello", () =>
+{
+    return "Hello From Minimal API";
+}).RequireRateLimiting("FixedWindowPolicy");
 
 app.Run();
