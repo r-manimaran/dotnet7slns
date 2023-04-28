@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsharpFeatures", "CsharpFea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFInserts.EFCore6", "EFInserts.EFCore6\EFInserts.EFCore6.csproj", "{C81868B6-20EA-45A9-924C-7689684B9CE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFInserts.EFCore7", "EFInserts.EFCore7\EFInserts.EFCore7.csproj", "{10702E2D-203E-4DB8-84E5-8D12DB42839B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C81868B6-20EA-45A9-924C-7689684B9CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C81868B6-20EA-45A9-924C-7689684B9CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C81868B6-20EA-45A9-924C-7689684B9CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10702E2D-203E-4DB8-84E5-8D12DB42839B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10702E2D-203E-4DB8-84E5-8D12DB42839B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10702E2D-203E-4DB8-84E5-8D12DB42839B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10702E2D-203E-4DB8-84E5-8D12DB42839B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
