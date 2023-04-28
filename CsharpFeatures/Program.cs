@@ -33,6 +33,9 @@ string longMessage = """
 //Uses Body Expression constructor to popuate the Property
 User user = new User("Manimaran", 35);
 
+#region call functions which contains Local fun
+
+#endregion
 
 #region Local function inside a method
 IEnumerable<string> SequenceToLower(IEnumerable<string> collection)
@@ -47,6 +50,25 @@ IEnumerable<string> SequenceToLower(IEnumerable<string> collection)
         return value.ToLowerInvariant();
     }
 }
+
+//Another Example
+IEnumerable<string> ReadFileLineByLine(string fileName)
+{
+    if(string.IsNullOrEmpty(fileName)|| !File.Exists(fileName))
+    {
+        throw new FileNotFoundException($"Unable to Locate the file {fileName}");
+    }
+    return ReadFileLines();
+
+    //InLine Function
+    IEnumerable<string> ReadFileLines()
+    {
+        foreach(var line in File.ReadAllLines(fileName))
+        {
+            yield return line;
+        }
+    }
+}
 #endregion
 
 #region String Interpolation
@@ -59,8 +81,6 @@ string fullName = string.Empty;
 //using String Interpolation
 fullName = $"{firstName} {lastName}";
 #endregion
-
-
 
 #region Return Readonly collection
 
@@ -90,3 +110,12 @@ ReadOnlyCollection<Product> GetProducts()
 }
 #endregion
 
+
+#region Required Keyword on Property
+
+public class Blog
+{
+    public required string Title { get; set; }
+    public string Description { get; set; }
+}
+#endregion

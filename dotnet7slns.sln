@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APiVersioningRateLimit", "APiVersioningRateLimit\APiVersioningRateLimit.csproj", "{8859C807-F325-49A8-A797-90FC397C3EC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpFeatures", "CsharpFeatures\CsharpFeatures.csproj", "{E1560D4C-A024-40B0-9E87-6BFAE8C04841}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsharpFeatures", "CsharpFeatures\CsharpFeatures.csproj", "{E1560D4C-A024-40B0-9E87-6BFAE8C04841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFInserts.EFCore6", "EFInserts.EFCore6\EFInserts.EFCore6.csproj", "{C81868B6-20EA-45A9-924C-7689684B9CE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E1560D4C-A024-40B0-9E87-6BFAE8C04841}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1560D4C-A024-40B0-9E87-6BFAE8C04841}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1560D4C-A024-40B0-9E87-6BFAE8C04841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C81868B6-20EA-45A9-924C-7689684B9CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81868B6-20EA-45A9-924C-7689684B9CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81868B6-20EA-45A9-924C-7689684B9CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81868B6-20EA-45A9-924C-7689684B9CE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
