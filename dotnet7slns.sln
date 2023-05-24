@@ -7,11 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APiVersioningRateLimit", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsharpFeatures", "CsharpFeatures\CsharpFeatures.csproj", "{E1560D4C-A024-40B0-9E87-6BFAE8C04841}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFInserts.EFCore6", "EFInserts.EFCore6\EFInserts.EFCore6.csproj", "{C81868B6-20EA-45A9-924C-7689684B9CE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFInserts.EFCore6", "EFInserts.EFCore6\EFInserts.EFCore6.csproj", "{C81868B6-20EA-45A9-924C-7689684B9CE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFInserts.EFCore7", "EFInserts.EFCore7\EFInserts.EFCore7.csproj", "{10702E2D-203E-4DB8-84E5-8D12DB42839B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFInserts.EFCore7", "EFInserts.EFCore7\EFInserts.EFCore7.csproj", "{10702E2D-203E-4DB8-84E5-8D12DB42839B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore.CompiledQuery.Benchmark", "EFCore.CompileddQuery.Benchmark\EFCore.CompiledQuery.Benchmark.csproj", "{23EBF393-5E89-4276-8747-6CAEACBFCBA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore.CompiledQuery.Benchmark", "EFCore.CompileddQuery.Benchmark\EFCore.CompiledQuery.Benchmark.csproj", "{23EBF393-5E89-4276-8747-6CAEACBFCBA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JWT", "JWT", "{9C974D87-274B-4334-9E53-B667B998E8C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksWebApi", "TasksWebApi\TasksWebApi.csproj", "{E8F21965-1CB7-42AD-B601-16938149BFD8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks.BusinessLayer", "Tasks.BusinessLayer\Tasks.BusinessLayer.csproj", "{839237DE-7CBF-4DFD-A128-39AE72CB3E2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectMappings", "ObjectMappings\ObjectMappings.csproj", "{DA50768B-40DB-41F0-A304-7BEC47BE6460}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +47,25 @@ Global
 		{23EBF393-5E89-4276-8747-6CAEACBFCBA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23EBF393-5E89-4276-8747-6CAEACBFCBA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23EBF393-5E89-4276-8747-6CAEACBFCBA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8F21965-1CB7-42AD-B601-16938149BFD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F21965-1CB7-42AD-B601-16938149BFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8F21965-1CB7-42AD-B601-16938149BFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8F21965-1CB7-42AD-B601-16938149BFD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839237DE-7CBF-4DFD-A128-39AE72CB3E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839237DE-7CBF-4DFD-A128-39AE72CB3E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839237DE-7CBF-4DFD-A128-39AE72CB3E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839237DE-7CBF-4DFD-A128-39AE72CB3E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA50768B-40DB-41F0-A304-7BEC47BE6460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA50768B-40DB-41F0-A304-7BEC47BE6460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA50768B-40DB-41F0-A304-7BEC47BE6460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA50768B-40DB-41F0-A304-7BEC47BE6460}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E8F21965-1CB7-42AD-B601-16938149BFD8} = {9C974D87-274B-4334-9E53-B667B998E8C3}
+		{839237DE-7CBF-4DFD-A128-39AE72CB3E2D} = {9C974D87-274B-4334-9E53-B667B998E8C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E47F90E-25A6-4ED3-986E-4855927C111A}
