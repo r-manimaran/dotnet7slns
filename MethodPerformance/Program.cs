@@ -1,18 +1,16 @@
-
-
-using ObjectMappings.Services;
+using MethodPerformance;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddAutoMapper(typeof(Program)); //Register AutoMapper
-builder.Services.AddSingleton<IUserService, UserService>();
+builder.Services.AddTransient<WeatherService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+MethodTimeLogger.Logger = app.Logger;
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -19,7 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TasksWebApi", "TasksWebApi\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks.BusinessLayer", "Tasks.BusinessLayer\Tasks.BusinessLayer.csproj", "{839237DE-7CBF-4DFD-A128-39AE72CB3E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectMappings", "ObjectMappings\ObjectMappings.csproj", "{DA50768B-40DB-41F0-A304-7BEC47BE6460}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectMappings", "ObjectMappings\ObjectMappings.csproj", "{DA50768B-40DB-41F0-A304-7BEC47BE6460}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerPdf", "BlazorServerPdf\BlazorServerPdf.csproj", "{9272A08E-71E9-4D7E-BDAF-8E8D6DB704CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodPerformance", "MethodPerformance\MethodPerformance.csproj", "{651F97B7-4B69-4579-9173-E7FB0DC5D0EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtlasMongoWithHealthChecks", "AtlasMongoWithHealthChecks\AtlasMongoWithHealthChecks.csproj", "{FF2D9920-E847-4000-A242-FBBC67579259}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +65,18 @@ Global
 		{DA50768B-40DB-41F0-A304-7BEC47BE6460}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA50768B-40DB-41F0-A304-7BEC47BE6460}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA50768B-40DB-41F0-A304-7BEC47BE6460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9272A08E-71E9-4D7E-BDAF-8E8D6DB704CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9272A08E-71E9-4D7E-BDAF-8E8D6DB704CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9272A08E-71E9-4D7E-BDAF-8E8D6DB704CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9272A08E-71E9-4D7E-BDAF-8E8D6DB704CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{651F97B7-4B69-4579-9173-E7FB0DC5D0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{651F97B7-4B69-4579-9173-E7FB0DC5D0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{651F97B7-4B69-4579-9173-E7FB0DC5D0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{651F97B7-4B69-4579-9173-E7FB0DC5D0EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF2D9920-E847-4000-A242-FBBC67579259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2D9920-E847-4000-A242-FBBC67579259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2D9920-E847-4000-A242-FBBC67579259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF2D9920-E847-4000-A242-FBBC67579259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

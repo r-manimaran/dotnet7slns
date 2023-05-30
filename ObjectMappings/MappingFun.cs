@@ -8,7 +8,6 @@ namespace ObjectMappings
         private static readonly Person _person =SeedData.GetPerson();
         private static readonly ICollection<Person> _people = SeedData.GetPeople();
 
-
         public static PersonDto MapPersonToNewDto()
         {
             var personDto = _person.Adapt<PersonDto>();
@@ -21,10 +20,10 @@ namespace ObjectMappings
             _person.Adapt(personDto);
             return personDto;
         }
-        public static IQueryable<PersonDto> MapPersonQueryableToDtoQueryable() 
-        {
+        //public static IQueryable<PersonDto> MapPersonQueryableToDtoQueryable() 
+        //{
 
-        }
+        //}
     }
 
    

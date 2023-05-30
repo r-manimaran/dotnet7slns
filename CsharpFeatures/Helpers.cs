@@ -67,10 +67,9 @@ namespace CsharpFeatures
             Console.WriteLine(dateOnly); //05/23/2023
 
         }
+        #endregion
     }
-    #region SelectMany
 
-    #endregion
 
 
 }

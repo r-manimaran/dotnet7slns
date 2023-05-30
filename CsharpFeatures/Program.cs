@@ -27,8 +27,8 @@ Console.WriteLine($"The User selected {selectedColor}");
 #endregion
 
 
-string longMessage = """
-                    This is the message with long message  """;
+//string longMessage = """
+//                    This is the message with long message  """;
 
 //Uses Body Expression constructor to popuate the Property
 User user = new User("Manimaran", 35);
