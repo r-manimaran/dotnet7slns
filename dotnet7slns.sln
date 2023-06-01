@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodPerformance", "Method
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtlasMongoWithHealthChecks", "AtlasMongoWithHealthChecks\AtlasMongoWithHealthChecks.csproj", "{FF2D9920-E847-4000-A242-FBBC67579259}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectMappersBenchMark", "ObjectMappersBenchMark\ObjectMappersBenchMark.csproj", "{BD2A96DA-5E8E-4382-A5AE-80D2A2278A79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{FF2D9920-E847-4000-A242-FBBC67579259}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF2D9920-E847-4000-A242-FBBC67579259}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF2D9920-E847-4000-A242-FBBC67579259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD2A96DA-5E8E-4382-A5AE-80D2A2278A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2A96DA-5E8E-4382-A5AE-80D2A2278A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2A96DA-5E8E-4382-A5AE-80D2A2278A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2A96DA-5E8E-4382-A5AE-80D2A2278A79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
